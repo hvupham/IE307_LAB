@@ -1,6 +1,6 @@
 import { ScrollView, StyleSheet, View } from "react-native"
 import PostItem from "./postItem"
-import itemList from "./PostData"
+import itemList from "../../data/PostData"
 const Posts = () => {
 	return (
 		<ScrollView style = {styles.container}>
