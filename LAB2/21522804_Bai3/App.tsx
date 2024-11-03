@@ -1,5 +1,5 @@
 // Phạm Hoài Vũ MSSV:21522804
-import React, { useContext } from "react"
+import React from "react"
 import { AppContextProvider } from "./src/provider/AppContextProvider"
 import { Screen } from "./src/routes/routes"
 export default function App() {
@@ -8,5 +8,4 @@ export default function App() {
 			<Screen />
 		</AppContextProvider>
 	)
-
 }
