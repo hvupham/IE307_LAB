@@ -1,3 +1,4 @@
+// Phạm Hoài Vũ MSSV:21522804
 // Profile.tsx
 import React from "react";
 import { SafeAreaView, View, Text, TouchableOpacity, StyleSheet } from "react-native";
