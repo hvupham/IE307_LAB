@@ -1,3 +1,4 @@
+// Phạm Hoài Vũ -21522804
 // QA.tsx
 import React from "react";
 import { View, Text, FlatList, StyleSheet } from "react-native";

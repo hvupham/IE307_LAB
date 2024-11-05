@@ -1,3 +1,4 @@
+// Phạm Hoài Vũ -21522804
 // Option.tsx
 import React from "react";
 import { View, Text, Switch, StyleSheet } from "react-native";

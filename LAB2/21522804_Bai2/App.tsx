@@ -1,3 +1,4 @@
+// Phạm Hoài Vũ -21522804
 // App.tsx
 import React from "react";
 import { SafeAreaView, Text, View, StyleSheet } from "react-native";
