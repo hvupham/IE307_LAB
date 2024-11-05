@@ -1,4 +1,5 @@
-// PostInteractions.tsx
+// Phạm Hoài Vũ - 21522804
+// bottomPost.tsx
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 

@@ -1,11 +1,8 @@
-// PostContent.tsx
+// Phạm Hoài Vũ - 21522804
+// contentPost.tsx
 import React from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
-
-interface PostContentProps {
-  title: string;
-  imgUrl: string;
-}
+import { PostContentProps } from "../../models/PostContent";
 
 const PostContent: React.FC<PostContentProps> = ({ title, imgUrl }) => (
   <View>

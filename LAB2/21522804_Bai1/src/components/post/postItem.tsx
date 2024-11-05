@@ -1,3 +1,4 @@
+// Phạm Hoài Vũ - 21522804
 // PostItem.tsx
 import React from "react";
 import { View, StyleSheet } from "react-native";

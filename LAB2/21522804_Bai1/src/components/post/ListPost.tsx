@@ -1,3 +1,5 @@
+// Phạm Hoài Vũ - 21522804
+// ListPost.tsx
 import { ScrollView, StyleSheet, View } from "react-native"
 import PostItem from "./postItem"
 import itemList from "../../data/PostData"

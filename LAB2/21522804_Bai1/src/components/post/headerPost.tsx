@@ -1,4 +1,5 @@
-// PostHeader.tsx
+// Phạm Hoài Vũ - 21522804
+// headerPost.tsx
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import Avatar from "../user/avatar";

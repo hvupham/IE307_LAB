@@ -1,3 +1,5 @@
+// Phạm Hoài Vũ - 21522804
+// avatar.tsx
 import React from "react";
 import { Image, View, StyleSheet } from "react-native";
 

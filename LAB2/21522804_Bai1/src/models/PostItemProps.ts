@@ -1,3 +1,4 @@
+// Phạm Hoài Vũ - 21522804
 export interface PostItemProps {
 	username: string
 	title: string
