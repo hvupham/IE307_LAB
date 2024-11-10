@@ -1,4 +1,5 @@
 // Phạm Hoài Vũ - 21522804
+// App.tsx
 import { StyleSheet, Text, View } from 'react-native';
 import Header from './src/components/shared/Header';
 import Posts from './src/components/post/ListPost';

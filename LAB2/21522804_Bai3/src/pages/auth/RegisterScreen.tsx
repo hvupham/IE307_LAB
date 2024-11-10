@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		padding: 12,
 		borderWidth: 2,
-		borderColor: "#cbd5e1", // Màu tương đương với "border-slate-300"
+		borderColor: "#cbd5e1", 
 		borderRadius: 8,
 		marginBottom: 16,
 	},
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
 	},
 	createButton: {
 		padding: 12,
-		backgroundColor: "#f97316", // Màu tương đương với "bg-orange-500"
+		backgroundColor: "#f97316", 
 		borderRadius: 8,
 		marginBottom: 16,
 	},
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
 	},
 	loginLink: {
 		fontWeight: "bold",
-		color: "#2563eb", // Màu tương đương với "text-blue-600"
+		color: "#2563eb", 
 	},
 });
 

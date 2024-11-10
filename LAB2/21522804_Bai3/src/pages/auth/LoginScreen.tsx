@@ -141,11 +141,11 @@ const styles = StyleSheet.create({
 		marginBottom: 16,
 	},
 	forgotPasswordText: {
-		color: "#fb7185", // Màu tương đương với "text-pink-400"
+		color: "#fb7185", 
 	},
 	loginButton: {
 		padding: 12,
-		backgroundColor: "#f97316", // Màu tương đương với "bg-orange-500"
+		backgroundColor: "#f97316", 
 		borderRadius: 8,
 		marginBottom: 16,
 	},
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
 	},
 	signUpLink: {
 		fontWeight: "bold",
-		color: "#2563eb", // Màu tương đương với "text-blue-600"
+		color: "#2563eb", 
 	},
 });
 
