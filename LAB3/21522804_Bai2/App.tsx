@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import React from "react"
+import { NavigationContainer } from "@react-navigation/native"
+import { MainStackNavigation } from "./src/Navigation/MainStackNavigation"
+import * as SQLite from "expo-sqlite"
+import { RecoilRoot } from "recoil"
+import { db } from "./config"
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+	React.useEffect(() => {
+		db.transaction((tx) => {
+			tx.executeSql(
+				"create table if not exists Note (id varchar primary key not null, title varchar, note varchar);"
+			)
+			console.log("success create table Notes")
+		})
+	}, [])
+	return (
+		<RecoilRoot>
+			<NavigationContainer>
+				<MainStackNavigation />
+			</NavigationContainer>
+		</RecoilRoot>
+	)
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
