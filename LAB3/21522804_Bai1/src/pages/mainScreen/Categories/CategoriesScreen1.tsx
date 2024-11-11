@@ -3,11 +3,11 @@
 import React from "react";
 import { SafeAreaView, View, Text, StyleSheet } from "react-native";
 
-export const Categories = () => {
+export const CategoriesScreen1 = () => {
 	return (
 		<SafeAreaView style={styles.safeArea}>
 			<View style={styles.container}>
-				<Text>Categories Screen</Text>
+				<Text>Categories Screen 1</Text>
 			</View>
 		</SafeAreaView>
 	);
@@ -24,4 +24,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default Categories;
+export default CategoriesScreen1;
