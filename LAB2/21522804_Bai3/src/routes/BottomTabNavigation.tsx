@@ -2,11 +2,11 @@
 // HomeScreen.tsx
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { HomeTabParamsList } from "../../routes/types/type";
-import { Home } from "./HomeScreen";
-import { Categories } from "./CategoriesScreen";
-import { Profile } from "./ProfileScreen";
-import { Favorites } from "./FavoritesScreen";
+import { HomeTabParamsList } from "./types/type";
+import { Home } from "../pages/mainScreen/HomeScreen";
+import { Categories } from "../pages/mainScreen/CategoriesScreen";
+import { Profile } from "../pages/mainScreen/ProfileScreen";
+import { Favorites } from "../pages/mainScreen/FavoritesScreen";
 import { AntDesign, FontAwesome, Octicons } from "@expo/vector-icons";
 import { View, StyleSheet } from "react-native";
 
