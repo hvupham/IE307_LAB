@@ -9,6 +9,7 @@ import { Profile } from "../pages/mainScreen/ProfileScreen";
 import { Favorites } from "../pages/mainScreen/FavoritesScreen";
 import { AntDesign, FontAwesome, Octicons } from "@expo/vector-icons";
 import { View, StyleSheet } from "react-native";
+const favouritesCount = 5;
 
 const Tab = createBottomTabNavigator<HomeTabParamsList>();
 
@@ -45,7 +46,11 @@ export const MainScreen = () => {
 		>
 			<Tab.Screen name="Home" component={Home} />
 			<Tab.Screen name="Categories" component={Categories} />
-			<Tab.Screen name="Favorites" component={Favorites} />
+			<Tab.Screen name="Favorites"
+			options={{
+				tabBarBadge: favouritesCount > 0 ? favouritesCount : undefined, // Hiển thị badge chỉ khi có mục yêu thích
+			  }} 
+			 component={Favorites} />
 			<Tab.Screen name="Profile" component={Profile} />
 		</Tab.Navigator>
 	);

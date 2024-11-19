@@ -1,4 +1,5 @@
 // Phạm Hoài Vũ MSSV:21522804
+// AppContextProps .ts
 import React from "react"
 type AppContextProps = {
 	data: {

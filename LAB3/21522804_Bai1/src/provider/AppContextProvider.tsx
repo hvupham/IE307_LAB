@@ -14,8 +14,8 @@ export const AppContextProvider: React.FC<AppProps> = (props) => {
 			value={{
 				data: [
 					{
-						email: ``,
-						password: ``,
+						email: `21522804@gm.uit.edu.vn`,
+						password: `123`,
 					},
 				],
 				isLoggedIn,
