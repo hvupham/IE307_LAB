@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { HomeTabParamList } from "./Type";
-import { SettingView } from "../Screens/SettingScreen/SettingScreen";
-import { HomeScreen } from "../Screens/HomeScreen/HomeScreen";
+import { HomeTabParamList } from "./navigation";
+import { SettingView } from "../Screens/SettingScreen";
+import { HomeScreen } from "../Screens/HomeScreen";
 import { View, Text, StyleSheet } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";

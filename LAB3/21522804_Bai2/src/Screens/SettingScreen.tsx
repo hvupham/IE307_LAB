@@ -1,8 +1,7 @@
 import { SafeAreaView, Switch, Text, View, StyleSheet } from "react-native";
 import { useRecoilState } from "recoil";
-import { themeState } from "../../stores/atom";
 import Slider from "@react-native-community/slider";
-
+import { themeState } from "../stores/atom";
 export const SettingView = () => {
 	const [getThemeState, setThemeState] = useRecoilState(themeState);
 	const isDarkTheme = getThemeState.theme === "Dark";

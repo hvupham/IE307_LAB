@@ -3,11 +3,10 @@ import "react-native-get-random-values"
 import { createNoteState } from "../../stores/atom"
 import { v4 as uuid } from "uuid"
 import { Alert } from "react-native"
-import { db } from "../../../config"
-import { HomeNativeStackScreenProps } from "../../Navigation/Type"
-import { NavigationAction, useNavigation } from "@react-navigation/native"
+import { database } from "../../../config"
+import { HomeNativeStackScreenProps } from "../../Navigation/navigation"
+import { useNavigation } from "@react-navigation/native"
 type Props = HomeNativeStackScreenProps<'NoteApp'>;
-
 export const useCreateNote = () => {
 	const navigation = useNavigation<Props['navigation']>();
 	const {
@@ -25,7 +24,7 @@ export const useCreateNote = () => {
 			return
 		} else {
 			const id = uuid()
-			db.transaction((tx) => {
+			database.transaction((tx) => {
 				tx.executeSql(`insert into Note (id, title, note) values(?, ?, ?)`, [
 					id,
 					title,

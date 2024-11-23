@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import { RootNativeStackParamList } from "./Type"
-import { HomeView } from "./BottomTabNavigation"
-import hooksNote from "../hooks/hookNote/hooksNote"
+import { RootNativeStackParamList } from "./navigation"
+import { HomeView } from "./Bottom"
+import hooksNote from "../hooks/Note"
 import React from "react"
 
 const NativeStack = createNativeStackNavigator<RootNativeStackParamList>()

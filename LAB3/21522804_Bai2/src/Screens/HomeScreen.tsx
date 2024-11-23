@@ -1,12 +1,11 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { SafeAreaView, Text, TouchableOpacity, View, StyleSheet } from "react-native";
-import { HomeNativeStackParamList } from "../Navigation/Type";
-import { MainHomeScreen } from "../Components/MainHomeScreen";
-import { NoteAppHomeScreen } from "../Components/NoteAppHome";
+import { HomeNativeStackParamList } from "../Navigation/navigation";
 import { useRecoilValue } from "recoil";
 import { themeState } from "../stores/export"
+import { Home } from "../Components/Home";
+import { NoteApp } from "../Components/NoteApp";
 const HomeNativeStack = createNativeStackNavigator<HomeNativeStackParamList>();
-
 export const HomeScreen = () => {
 	const { theme } = useRecoilValue(themeState);
 	const isDarkTheme = theme === "Dark";
@@ -56,8 +55,8 @@ export const HomeScreen = () => {
 					}
 				},
 			})}>
-			<HomeNativeStack.Screen name="Main" component={MainHomeScreen} />
-			<HomeNativeStack.Screen name="NoteApp" component={NoteAppHomeScreen} />
+			<HomeNativeStack.Screen name="Main" component={Home} />
+			<HomeNativeStack.Screen name="NoteApp" component={NoteApp} />
 		</HomeNativeStack.Navigator>
 	);
 };

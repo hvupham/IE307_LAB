@@ -1,11 +1,11 @@
 import { Text, View, ScrollView, TouchableOpacity, StyleSheet } from "react-native"
 import { EvilIcons } from "@expo/vector-icons"
 import { useRecoilValue, useSetRecoilState } from "recoil"
-import { listNoteState, themeState, updateNoteState } from "../stores/atom"
+import {  themeState, updateNoteState } from "../stores/atom"
 import React from "react"
 import { NavigationProp, useNavigation } from "@react-navigation/native"
-import { HomeNativeStackParamList } from "../Navigation/Type"
-import hooksNote from "../hooks/hookNote/hooksNote"
+import { HomeNativeStackParamList } from "../Navigation/navigation"
+import hooksNote from "../hooks/Note"
 
 type TItemNoteScreenComponentProps = {
   id: string
@@ -64,31 +64,42 @@ export const ItemNoteScreenComponent: React.FC<TItemNoteScreenComponentProps> = 
 
 const styles = StyleSheet.create({
   touchable: {
-    marginTop: 16,
+    marginVertical: 10,
+    paddingHorizontal: 12,
   },
   noteContainer: {
-    padding: 16,
-    borderWidth: 1,
-    borderRadius: 8,
+    padding: 20,
+    borderWidth: 2,
+    borderRadius: 12,
+    backgroundColor: "#f5f5f5",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
   },
   textContainer: {
     flexDirection: "column",
-    width: "80%",
-    marginRight: 8,
+    width: "75%",
+    marginRight: 10,
   },
   titleText: {
-    fontWeight: "800",
-    marginBottom: 8,
+    fontWeight: "bold",
+    fontSize: 18,
+    color: "#333",
+    marginBottom: 6,
   },
   noteText: {
-    fontWeight: "400",
+    fontWeight: "300",
+    fontSize: 16,
+    color: "#666",
   },
   scrollView: {
     flexDirection: "column",
     width: "100%",
-    paddingHorizontal: 16,
+    paddingVertical: 12,
+    paddingHorizontal: 20,
   },
 })

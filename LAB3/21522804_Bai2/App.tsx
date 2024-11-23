@@ -1,16 +1,14 @@
 import React from "react"
 import { NavigationContainer } from "@react-navigation/native"
-import { MainStackNavigation } from "./src/Navigation/MainStackNavigation"
-import * as SQLite from "expo-sqlite"
+import { MainStackNavigation } from "./src/Navigation/Stack"
 import { RecoilRoot } from "recoil"
-import { db } from "./config"
+import { database } from "./config"
 export default function App() {
 	React.useEffect(() => {
-		db.transaction((tx) => {
+		database.transaction((tx) => {
 			tx.executeSql(
 				"create table if not exists Note (id varchar primary key not null, title varchar, note varchar);"
 			)
-			console.log("success create table Notes")
 		})
 	}, [])
 	return (
