@@ -8,6 +8,13 @@ type TListNoteState = {
 		note: string
 	}[]
 }
+export const themeState = atom<TThemeState>({
+	key: "themeStateAtom",
+	default: {
+		theme: "Light",
+		fontSize: 16,
+	},
+})
 type TCreateNoteState = {
 	state: "idle" | "hasValue"
 	contents: {
@@ -70,12 +77,5 @@ export const deleteNoteState = atom<TDeleteNoteState>({
 	default: {
 		state: "idle",
 		contents: null,
-	},
-})
-export const themeState = atom<TThemeState>({
-	key: "themeStateAtom",
-	default: {
-		theme: "Light",
-		fontSize: 16,
 	},
 })

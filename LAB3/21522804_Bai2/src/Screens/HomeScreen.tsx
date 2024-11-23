@@ -1,10 +1,10 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { SafeAreaView, Text, TouchableOpacity, View, StyleSheet } from "react-native";
-import { HomeNativeStackParamList } from "../../Navigation/Type";
-import { MainHomeScreen } from "../../Components/MainHomeScreen";
-import { NoteAppHomeScreen } from "../../Components/NoteAppHome";
+import { HomeNativeStackParamList } from "../Navigation/Type";
+import { MainHomeScreen } from "../Components/MainHomeScreen";
+import { NoteAppHomeScreen } from "../Components/NoteAppHome";
 import { useRecoilValue } from "recoil";
-import { themeState } from "../../stores/export"
+import { themeState } from "../stores/export"
 const HomeNativeStack = createNativeStackNavigator<HomeNativeStackParamList>();
 
 export const HomeScreen = () => {
