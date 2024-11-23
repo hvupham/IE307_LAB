@@ -1,4 +1,5 @@
 // Phạm Hoài Vũ MSSV:21522804
+// type.ts
 import { BottomTabScreenProps } from "@react-navigation/bottom-tabs"
 import {
 	CompositeScreenProps,

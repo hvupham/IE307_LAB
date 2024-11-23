@@ -2,7 +2,7 @@ import { useRecoilValue, useResetRecoilState } from "recoil"
 import { updateNoteState } from "../../stores/atom"
 import "react-native-get-random-values"
 import { Alert } from "react-native"
-import { db } from "../../../config"
+import { database } from "../../../config"
 import { SQLiteProvider, useSQLiteContext, type SQLiteDatabase } from 'expo-sqlite';
 export const useUpdateNote = () => {
 	const {
@@ -19,7 +19,7 @@ export const useUpdateNote = () => {
 			alert()
 			return
 		} else {
-			db.transaction((tx) => {
+			database.transaction((tx) => {
 				tx.executeSql(`update Note set title = ?, note = ? where id = ?`, [
 					title,
 					note,

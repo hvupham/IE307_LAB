@@ -1,8 +1,8 @@
 import "react-native-get-random-values"
-import { db } from "../../../config"
+import { database } from "../../../config"
 export const useDeleteNote = () => {
 	const handleDeleteNote = (id: string) => {
-		db.transaction((tx) => {
+		database.transaction((tx) => {
 			tx.executeSql(`delete from Note where id = ?`, [id])
 		})
 	}

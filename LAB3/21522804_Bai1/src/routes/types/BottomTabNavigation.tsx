@@ -3,7 +3,6 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { HomeTabParamsList } from "./type";
-import { Home } from "../../pages/mainScreen/HomeScreen";
 import { Categories } from "../../pages/mainScreen/Categories/MainCategorie";
 import { Profile } from "../../pages/mainScreen/ProfileScreen";
 import { Favorites } from "../../pages/mainScreen/FavoritesScreen";

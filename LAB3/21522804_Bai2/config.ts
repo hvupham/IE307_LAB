@@ -1,3 +1,3 @@
 // import * as SQLite from "expo-sqlite"
 import * as SQLite from 'expo-sqlite/legacy';
-export const db =  SQLite.openDatabase('ie307');
+export const database =  SQLite.openDatabase('ie307');
