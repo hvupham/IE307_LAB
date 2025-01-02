@@ -1,4 +1,5 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 import Home from "./Home";
@@ -6,7 +7,7 @@ import Categories from "./Categories";
 import Cart from "./Cart";
 import ProfileStack from "./ProfileStack";
 import { useContext } from "react";
-import { DataContext } from "../../Components/DataContext";
+import { DataContext } from "../../context/DataContext";
 
 const Tab = createBottomTabNavigator();
 
@@ -25,7 +26,8 @@ function HomeScreen() {
           ),
         }}
       />
-      {/* 21522732 Lê Quang Trường */}
+      {/* 21522804 Phạm Hoài Vũ
+ */}
       <Tab.Screen
         name="Categories"
         component={Categories}
@@ -48,7 +50,8 @@ function HomeScreen() {
         }}
       />
 
-      {/* 21522732 Lê Quang Trường */}
+      {/* 21522804 Phạm Hoài Vũ
+ */}
       <Tab.Screen
         name="ProfileStack"
         component={ProfileStack}

@@ -1,4 +1,5 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
 import { useRoute } from "@react-navigation/native";
@@ -30,7 +31,8 @@ const ProductDetail = () => {
   );
 };
 
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 export default ProductDetail;
 
 const styles = StyleSheet.create({

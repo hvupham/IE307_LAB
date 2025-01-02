@@ -1,8 +1,8 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
 import { StyleSheet, Text, View } from "react-native";
 import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
-import { DataContext } from "../../Components/DataContext";
+import { DataContext } from "../../context/DataContext";
 import { FlatList } from "react-native-gesture-handler";
 import InCartProduct from "../../Components/InCartProduct";
 import { Button } from "react-native";
@@ -25,8 +25,8 @@ const Cart = () => {
       .catch((err) => console.log(err));
   };
 
-  // 21522732 Lê Quang Trường
-  const deleteUserCartOnSever = () => {
+// 21522804 Phạm Hoài Vũ
+const deleteUserCartOnSever = () => {
     axios
       .delete(`https://fakestoreapi.com/carts/${userInfo.id}`)
       .then((response) => console.log(response.data))
@@ -56,8 +56,8 @@ const Cart = () => {
     );
   }, []);
 
-  // 21522732 Lê Quang Trường
-  useEffect(() => {
+// 21522804 Phạm Hoài Vũ
+useEffect(() => {
     // Get id of product in cart
     const ids = cartList.map((product) => product.productId);
     // Get detail of products in cart
@@ -83,8 +83,8 @@ const Cart = () => {
     }
   }, [cartList]);
 
-  // 21522732 Lê Quang Trường
-  return (
+// 21522804 Phạm Hoài Vũ
+return (
     <View style={[styles.container, styles.largeContainer]}>
       {cartList.length !== 0 ? (
         <View style={styles.container}>
@@ -114,7 +114,7 @@ const Cart = () => {
 
 export default Cart;
 
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
 const styles = StyleSheet.create({
   container: {
     flex: 1,

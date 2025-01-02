@@ -1,7 +1,8 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 import { StyleSheet, Text, View, Image } from "react-native";
 import { useContext } from "react";
-import { DataContext } from "./DataContext";
+import { DataContext } from "../context/DataContext";
 import { Pressable } from "react-native";
 
 const Category = ({ item }) => {
@@ -25,7 +26,8 @@ const Category = ({ item }) => {
   );
 };
 
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 export default Category;
 
 const styles = StyleSheet.create({

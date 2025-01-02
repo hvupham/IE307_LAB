@@ -1,11 +1,11 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
 import { StyleSheet, View } from "react-native";
 import { useContext, useEffect, useState } from "react";
 import { FlatList } from "react-native-gesture-handler";
 import axios from "axios";
 import { ActivityIndicator } from "react-native";
 import Category from "../../Components/Category";
-import { DataContext } from "../../Components/DataContext";
+import { DataContext } from "../../context/DataContext";
 import Product from "../../Components/Product";
 
 const Categories = () => {
@@ -28,8 +28,8 @@ const Categories = () => {
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROVxXazviFEKTNVPtOEQ1Z-vWJt7p2hybmtA&usqp=CAU",
   };
 
-  // 21522732 Lê Quang Trường
-  const getCategories = () => {
+// 21522804 Phạm Hoài Vũ
+const getCategories = () => {
     axios
       .get("https://fakestoreapi.com/products/categories")
       .then((response) => {
@@ -47,8 +47,8 @@ const Categories = () => {
       .catch((err) => console.log(err));
   };
 
-  // 21522732 Lê Quang Trường
-  const getElectronicProducts = () => {
+// 21522804 Phạm Hoài Vũ
+const getElectronicProducts = () => {
     axios
       .get("https://fakestoreapi.com/products/category/electronics")
       .then((response) => {
@@ -73,8 +73,8 @@ const Categories = () => {
       });
   };
 
-  // 21522732 Lê Quang Trường
-  const getMenProducts = () => {
+// 21522804 Phạm Hoài Vũ
+const getMenProducts = () => {
     axios
       .get("https://fakestoreapi.com/products/category/men's clothing")
       .then((response) => {
@@ -98,8 +98,8 @@ const Categories = () => {
       });
   };
 
-  // 21522732 Lê Quang Trường
-  const loadCurrentProducts = () => {
+// 21522804 Phạm Hoài Vũ
+const loadCurrentProducts = () => {
     switch (activeCategory) {
       case "electronics":
         setCurrentProducts(electronicsProducts);
@@ -128,8 +128,8 @@ const Categories = () => {
     getWomenProducts();
   }, []);
 
-  // 21522732 Lê Quang Trường
-  useEffect(() => {
+// 21522804 Phạm Hoài Vũ
+useEffect(() => {
     loadCurrentProducts();
   }, [activeCategory]);
 
@@ -158,7 +158,7 @@ const Categories = () => {
   );
 };
 
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
 export default Categories;
 
 const styles = StyleSheet.create({

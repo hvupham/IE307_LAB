@@ -1,4 +1,5 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 import { StyleSheet, TouchableOpacity, Image } from "react-native";
 import React from "react";
 

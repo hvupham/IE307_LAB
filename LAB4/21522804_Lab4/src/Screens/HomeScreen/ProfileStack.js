@@ -1,11 +1,12 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 import { createStackNavigator } from "@react-navigation/stack";
 import Profile from "./Profile";
 import EditProfile from "./EditProfile";
 import { Ionicons } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
-import { DataContext } from "../../Components/DataContext";
+import { DataContext } from "../../context/DataContext";
 import { useContext } from "react";
 
 const Stack = createStackNavigator();
@@ -19,7 +20,8 @@ const ProfileStack = () => {
     setIsUpdateButtonPressed(true);
   };
 
-  // 21522732 Lê Quang Trường
+  // 21522804 Phạm Hoài Vũ
+
   return (
     <Stack.Navigator>
       <Stack.Screen

@@ -1,4 +1,5 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 import { StyleSheet, Text, View, TouchableOpacity, Alert } from "react-native";
 import { useContext, useState } from "react";
 import axios from "axios";
@@ -6,15 +7,15 @@ import Input from "../../Components/Input";
 import SubmitBtn from "../../Components/SubmitBtn";
 import AppHeader from "../../Components/AppHeader";
 import IconBtn from "../../Components/IconBtn";
-import { AuthenContext } from "../../Components/AuthenContext";
-import { DataContext } from "../../Components/DataContext";
+import { AuthenContext } from "../../context/AuthenContext";
+import { DataContext } from "../../context/DataContext";
 
 const Login = ({ navigation }) => {
   const { setAuthen } = useContext(AuthenContext);
   const { setToken } = useContext(DataContext);
 
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("mor_2314");
+  const [password, setPassword] = useState("83r5^_");
 
   const handleLogin = () => {
     axios
@@ -35,8 +36,9 @@ const Login = ({ navigation }) => {
       });
   };
 
-  // 21522732 Lê Quang Trường
-  return (
+// 21522804 Phạm Hoài Vũ
+
+return (
     <View style={styles.container}>
       <AppHeader heading={"Welcome"} />
       {/* Input group */}
@@ -45,6 +47,7 @@ const Login = ({ navigation }) => {
           iconType={"mail"}
           placeholder={"Username"}
           onChangeText={setUsername}
+          value={username}
         />
         <Input
           type={"password"}

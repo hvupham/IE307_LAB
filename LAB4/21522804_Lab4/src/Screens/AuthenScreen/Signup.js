@@ -1,4 +1,5 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
 import Input from "../../Components/Input";
@@ -41,7 +42,8 @@ const Signup = ({ navigation }) => {
 };
 export default Signup;
 
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

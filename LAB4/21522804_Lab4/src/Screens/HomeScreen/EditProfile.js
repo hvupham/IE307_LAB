@@ -1,8 +1,8 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
 import { StyleSheet, Text, View, TextInput } from "react-native";
 import { useContext, useEffect, useState } from "react";
 import { useRoute } from "@react-navigation/native";
-import { DataContext } from "../../Components/DataContext";
+import { DataContext } from "../../context/DataContext";
 import axios from "axios";
 import { SafeAreaView } from "react-native";
 
@@ -26,7 +26,7 @@ const EditProfile = () => {
   const [city, setCity] = useState(route.params.city);
   const [street, setStreet] = useState(route.params.street);
 
-  // 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
   const updateDataOnServer = () => {
     axios
       .put(`https://fakestoreapi.com/users/${userInfo.id}`, userInfo)
@@ -59,7 +59,8 @@ const EditProfile = () => {
   }, [isUpdateButtonPressed]);
 
   return (
-    // 21522732 Lê Quang Trường
+    // 21522804 Phạm Hoài Vũ
+
     <SafeAreaView style={styles.container}>
       {/* Name group */}
       <View style={styles.row}>
@@ -92,7 +93,8 @@ const EditProfile = () => {
         />
       </View>
 
-      {/* 21522732 Lê Quang Trường */}
+      {/* 21522804 Phạm Hoài Vũ
+ */}
       {/* Email */}
       <View style={styles.inputGroup}>
         <Text style={styles.title}>Email</Text>
@@ -123,7 +125,8 @@ const EditProfile = () => {
         />
       </View>
 
-      {/* 21522732 Lê Quang Trường */}
+      {/* 21522804 Phạm Hoài Vũ
+ */}
       {/* Street */}
       <View style={styles.inputGroup}>
         <Text style={styles.title}>Street</Text>
@@ -147,7 +150,8 @@ const EditProfile = () => {
   );
 };
 
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 export default EditProfile;
 
 const styles = StyleSheet.create({

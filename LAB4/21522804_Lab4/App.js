@@ -1,8 +1,8 @@
 // 21522804 Phạm Hoài Vũ
-import { AuthenContextProvider } from "./src/Components/AuthenContext";
-import MainNavigator from "./src/Screens/MainNavigator";
-import { DataContextProvider } from "./src/Components/DataContext"; 
 
+import MainNavigator from "./src/Screens/MainNavigator";
+import { DataContextProvider } from "./src/context/DataContext";
+import { AuthenContextProvider } from "./src/context/AuthenContext";
 const App = () => {
   return (
     <AuthenContextProvider>

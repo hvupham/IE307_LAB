@@ -1,9 +1,10 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 import { StyleSheet, Text, View, Button, Image, Pressable } from "react-native";
 import { useContext } from "react";
 import { Ionicons } from "@expo/vector-icons";
-import { AuthenContext } from "../../Components/AuthenContext";
-import { DataContext } from "../../Components/DataContext";
+import { AuthenContext } from "../../context/AuthenContext";
+import { DataContext } from "../../context/DataContext";
 
 const Profile = ({ navigation }) => {
   const { setAuthen } = useContext(AuthenContext);
@@ -17,13 +18,14 @@ const Profile = ({ navigation }) => {
     console.log("Log out");
   };
 
-  // 21522732 Lê Quang Trường
+  // 21522804 Phạm Hoài Vũ
+
   return (
     <View style={styles.container}>
       {/* Main info */}
       <View style={styles.row}>
         <View style={styles.mainInfo}>
-          <Image source={require("../../avatar.jpg")} style={styles.avatar} />
+          <Image source={require("../../../assets/avatar.jpg")} style={styles.avatar} />
           <Text style={styles.boldText}>
             {capitalize(userInfo.name.firstname)}
           </Text>
@@ -46,7 +48,8 @@ const Profile = ({ navigation }) => {
             })
           }
         >
-          {/* 21522732 Lê Quang Trường */}
+          {/* 21522804 Phạm Hoài Vũ
+ */}
           <Ionicons
             name="open"
             color={styles.editIcon.color}
@@ -78,7 +81,8 @@ const Profile = ({ navigation }) => {
           <Text style={styles.detailInfo}>{userInfo.email}</Text>
         </View>
 
-        {/* 21522732 Lê Quang Trường */}
+        {/* 21522804 Phạm Hoài Vũ
+ */}
         {/* Phone */}
         <View style={styles.specificInfoGroup}>
           <Text style={[styles.boldText, styles.title]}>Phone:</Text>
@@ -104,7 +108,8 @@ const Profile = ({ navigation }) => {
   );
 };
 
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 export default Profile;
 
 const styles = StyleSheet.create({

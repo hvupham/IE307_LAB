@@ -1,4 +1,5 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 import { createStackNavigator } from "@react-navigation/stack";
 import HomeBottom from "./HomeBottom";
 import ProductDetail from "./ProductDetail";

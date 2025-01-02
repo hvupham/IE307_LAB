@@ -1,4 +1,5 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 import { decode } from "base-64";
 global.atob = decode;
 import { createContext, useState, useEffect } from "react";
@@ -16,7 +17,8 @@ const DataContextProvider = ({ children }) => {
   const [cartList, setCartList] = useState([]);
   const [homeLoading, setHomeLoading] = useState(true);
 
-  // 21522732 Lê Quang Trường
+  // 21522804 Phạm Hoài Vũ
+
   const getUserInfo = () => {
     const id = jwtDecode(token).sub;
     axios
@@ -41,7 +43,8 @@ const DataContextProvider = ({ children }) => {
       .catch((err) => console.log(err));
   };
 
-  // 21522732 Lê Quang Trường
+  // 21522804 Phạm Hoài Vũ
+
   const getAllProducts = () => {
     axios
       .get("https://fakestoreapi.com/products")
@@ -63,7 +66,8 @@ const DataContextProvider = ({ children }) => {
     }
   }, [token]);
 
-  // 21522732 Lê Quang Trường
+  // 21522804 Phạm Hoài Vũ
+
   return (
     <DataContext.Provider
       value={{

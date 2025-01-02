@@ -1,4 +1,4 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
 import { createStackNavigator } from "@react-navigation/stack";
 import Login from "./Login";
 import Signup from "./Signup";

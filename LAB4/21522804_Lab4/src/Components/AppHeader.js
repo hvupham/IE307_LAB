@@ -1,4 +1,5 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
 
@@ -6,7 +7,7 @@ const AppHeader = ({ heading }) => {
   return (
     <View style={styles.appHeader}>
       <Image
-        source={require("../react_logo.png")}
+        source={require("../../assets/react_logo.png")}
         style={styles.appIcon}
       ></Image>
       <Text style={styles.appHeading}>{heading}</Text>
@@ -32,4 +33,5 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
 });
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+

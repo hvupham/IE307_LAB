@@ -1,4 +1,5 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 import { StyleSheet, TextInput, SafeAreaView } from "react-native";
 import React from "react";
 import Icon from "react-native-vector-icons/MaterialIcons";
@@ -18,7 +19,8 @@ const Input = ({ type, iconType, placeholder, onChangeText }) => {
 
 export default Input;
 
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 const styles = StyleSheet.create({
   // Input group
   inputBox: {

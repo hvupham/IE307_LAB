@@ -1,4 +1,5 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 import {
   StyleSheet,
   Text,
@@ -11,7 +12,7 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import React, { useContext, useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
-import { DataContext } from "./DataContext";
+import { DataContext } from "../context/DataContext";
 
 const InCartProduct = ({ item }) => {
   const navigation = useNavigation();
@@ -19,7 +20,8 @@ const InCartProduct = ({ item }) => {
   const [itemQuantity, setItemQuantity] = useState(0);
   const [modalVisible, setModalVisible] = useState(false);
 
-  // 21522732 Lê Quang Trường
+  // 21522804 Phạm Hoài Vũ
+
   const updateCartList = () => {
     // Update quantity in cart
     const index = cartList.findIndex(
@@ -48,7 +50,8 @@ const InCartProduct = ({ item }) => {
     setModalVisible(false);
   };
 
-  // 21522732 Lê Quang Trường
+  // 21522804 Phạm Hoài Vũ
+
   useEffect(() => {
     setItemQuantity(
       cartList.find((product) => product.productId === item.id).quantity
@@ -59,7 +62,8 @@ const InCartProduct = ({ item }) => {
     updateCartList();
   }, [itemQuantity]);
 
-  // 21522732 Lê Quang Trường
+  // 21522804 Phạm Hoài Vũ
+
   return (
     <TouchableOpacity
       style={styles.product}
@@ -83,7 +87,8 @@ const InCartProduct = ({ item }) => {
                 size={26}
               />
             </TouchableOpacity>
-            {/* 21522732 Lê Quang Trường */}
+            {/* 21522804 Phạm Hoài Vũ
+ */}
             <Text style={styles.quantityText}>{itemQuantity}</Text>
             <TouchableOpacity
               style={styles.quantityText}
@@ -110,7 +115,8 @@ const InCartProduct = ({ item }) => {
         <Ionicons name="close" color={styles.deleteBtn.color} size={26} />
       </TouchableOpacity>
       {/* Modal */}
-      {/* 21522732 Lê Quang Trường */}
+      {/* 21522804 Phạm Hoài Vũ
+ */}
       <Modal
         animationType="fade"
         transparent={true}

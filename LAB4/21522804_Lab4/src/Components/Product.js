@@ -1,9 +1,10 @@
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 import { StyleSheet, Text, View, TouchableOpacity, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import React, { useContext } from "react";
 import { useNavigation } from "@react-navigation/native";
-import { DataContext } from "./DataContext";
+import { DataContext } from "../context/DataContext";
 import { Alert } from "react-native";
 
 const Product = ({ item }) => {
@@ -58,7 +59,8 @@ const Product = ({ item }) => {
 
 export default Product;
 
-// 21522732 Lê Quang Trường
+// 21522804 Phạm Hoài Vũ
+
 const styles = StyleSheet.create({
   product: {
     flex: 1,
@@ -93,7 +95,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: "#b00000",
   },
-  // 21522732 Lê Quang Trường
+  // 21522804 Phạm Hoài Vũ
+
   row: {
     marginTop: 3,
     flexDirection: "row",
